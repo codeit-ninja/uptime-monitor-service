@@ -1,10 +1,6 @@
 import { readItems } from "@directus/sdk"
 import { client } from ".."
 import { HTTPMonitor } from "./monitors/http"
-import WS from "./ws"
-import { Subscriptions } from "./subscriptions"
-import { startMonitor } from "./utils"
-import { sleep } from "bun"
 
 export const boot = async () => {
     const active: string[] = [];
